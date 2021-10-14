@@ -20,18 +20,11 @@ export default class Team {
     return [...this.members];
   }
 
-  [Symbol.iterator]() {
-    const values = this.toArray();
-    let index = -1;
+  * [Symbol.iterator]() {
+    const array = this.toArray();
 
-    return {
-      next() {
-        index += 1;
-        return {
-          value: values[index],
-          done: index >= values.length,
-        };
-      },
-    };
+    for (let index = 0; index < array.length; index += 1) {
+      yield array[index];
+    }
   }
 }

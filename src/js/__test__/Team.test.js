@@ -5,7 +5,7 @@ import Magician from '../Magician';
 
 import Team from '../Team';
 
-test('test iterators', () => {
+test('test yield iterators', () => {
   const personBowerman = new Bowerman('Jack');
   const personDaemon = new Daemon('London');
   const personZombie = new Zombie('Victor');
