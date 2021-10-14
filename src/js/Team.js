@@ -21,7 +21,7 @@ export default class Team {
   }
 
   * [Symbol.iterator]() {
-    const array = this.toArray();
+    const array = [...this.members];
 
     for (let index = 0; index < array.length; index += 1) {
       yield array[index];
