@@ -1,26 +1,9 @@
-// import Bowerman from './Bowerman';
-// import Daemon from './Daemon';
-// import Zombie from './Zombie';
-// import Magician from './Magician';
+// import canIterate from './Sevice';
 
-// import Team from './Team';
-
-// const personBowerman = new Bowerman('Jack');
-// const personDaemon = new Daemon('London');
-// const personZombie = new Zombie('Victor');
-// const personMagician = new Magician('Tsoy');
-
-// const round = new Team();
-
-// round.addAll(personDaemon, personBowerman, personZombie, personMagician);
-
-// const arrRound = round.toArray();
-
-// console.log(arrRound);
-
-// const arr = [];
-// for (const iterator of round) {
-//   arr.push(iterator);
-// }
-
-// console.log(arr);
+// console.log(canIterate('filter', [])); // true
+// console.log(canIterate(Symbol.iterator, new Map())); // true
+// console.log(canIterate(Symbol.iterator, new Set())); // true
+// console.log(canIterate(Symbol.iterator, null)); // false
+// console.log(canIterate(Symbol.iterator, 10)); // false
+// console.log(canIterate(Symbol.iterator, 'Netology')); // true
+// console.log(canIterate('length', 'Netology')); // true
